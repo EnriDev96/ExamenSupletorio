@@ -1,0 +1,5 @@
+use('db_examen_recupercacion') 
+//db.estudiante.find()
+//db.estudiante.find({direccion: "Loja"},{_id:0,_class:0})
+//db.estudiante.updateOne({_id: {$eq:2}},{$set:{direccion:"Guayaquil"}})
+db.estudiante.find().sort({nombre:-1})
